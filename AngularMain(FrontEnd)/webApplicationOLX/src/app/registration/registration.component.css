@@ -1,0 +1,39 @@
+/* Custom CSS for specific adjustments */
+
+.section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.card {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    box-shadow: 5px 10px 8px #0f5764;
+}
+
+.card-body {
+    padding: 40px;
+}
+
+.col-12.col-md-5 {
+    min-height: 600px;
+    background-color: rgb(12, 46, 47);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: rgb(12, 46, 47);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0f4c50; /* Darken the background color on hover */
+}

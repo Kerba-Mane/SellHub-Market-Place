@@ -1,0 +1,51 @@
+/* styles.css */
+.list-group-item.active {
+    background-color: rgb(12, 46, 47);
+    border-color: rgb(12, 46, 47);
+  }
+  
+  .card-title {
+    margin-bottom: 20px;
+  }
+  
+  .card-body p, .card-body a {
+    margin-bottom: 10px;
+  }
+  
+  .btn-outline-secondary {
+    margin-bottom: 20px;
+  }
+  
+  .list-group-item a {
+    text-decoration: none;
+    color: rgb(12, 46, 47);
+  }
+  
+  .list-group-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .card-body .btn {
+    margin: 10px 0;
+  }
+  
+  .text-center .btn-link {
+    text-decoration: none;
+    color: rgb(12, 46, 47);
+  }
+  
+  .text-center .btn-link:hover {
+    text-decoration: underline;
+  }
+  a{
+    background-color: white solid 2px;
+    border-color:rgb(12, 46, 47);
+    color:rgb(12, 46, 47);
+  }
+  a:hover{
+    background-color:rgb(12, 46, 47) ;
+    color:white;
+    border-color:white;
+  
+
+  }

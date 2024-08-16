@@ -1,0 +1,88 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg ">
+  <div class="container">
+    <a class="navbar-brand" href="#">SELLHUB</a>
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="d-flex align-items-center w-100 form-search">
+        <div class="input-group">
+          <input type="search" class="form-control" placeholder="Search" aria-label="Search" name="searchname"  [(ngModel)]="searchname" />
+        </div>
+        <a  class="text-white"><i (click)="searchByName()" class="fas fa-search ps-3"></i></a>
+      </form>
+      
+
+      <ul class="navbar-nav ms-3">
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" routerLink="/addproduct">
+            <button class="button-30" role="button"><strong>+Sell</strong></button>
+          </a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img src="profile.png" height="50px" width="60px">
+          </a>
+          <div class="dropdown-menu dropdown-menu-right profile-card" aria-labelledby="profileDropdown">
+            <div class="profile-header">
+              <img src="profile.png" alt="Profile Picture" width="50" height="50">
+              <div class="profile-info">
+                <h4><strong>{{registration.userName}}</strong></h4>
+                <h6>{{registration.email}}</h6>
+              </div>
+            </div>
+            <div class="profile-actions">
+              <button class="btn btn-success btn-sm container">
+                <h5> View and edit profile</h5>
+              </button>
+            </div>
+            <div class="dropdown-divider"></div>
+            <ul class="nav-menu">
+              <li>
+                <a routerLink="/myproduct">
+                  <i class="fas fa-heart" role="button"></i>
+                  <h5> My Products</h5>
+                </a>
+              </li>
+              <li>
+                <a routerLink="/myorder">
+                  <i class="fas fa-box"></i>
+                  <h5> My Orders</h5>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-question-circle"></i>
+                  <h5> Help</h5>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-cog"></i>
+                  <h5> Settings</h5>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-sign-out-alt btn btn-danger" (click)="logout()"></i><strong>
+                    <h5> Logout </h5>
+                  </strong>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <button type="button" class="btn btn-outline-light logout" (click)="logout()">Logout</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+</nav><br><br>

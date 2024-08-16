@@ -1,0 +1,241 @@
+/* General Styles */
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #e2eaef;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+/* Navigation Styles */
+.navigation {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(7, 46, 51);
+  padding: 10px 0;
+  position: relative;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navigation ul li {
+  position: relative;
+}
+
+.navigation ul li a {
+  color: #fff;
+  padding: 15px 20px;
+  text-decoration: none;
+  background-color: transparent;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.navigation ul li a:hover {
+  border-bottom: 2px solid #7ac400;
+}
+
+.navigation ul li ul.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(7, 46, 51);
+  border-radius: 0 0 5px 5px;
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.navigation ul li:hover ul.dropdown {
+  display: block;
+}
+
+.navigation ul li ul.dropdown li {
+  width: 100%;
+}
+
+.navigation ul li ul.dropdown li a {
+  padding: 10px 15px;
+  color: #fff;
+  background-color: rgb(11, 63, 70);
+  display: block;
+}
+
+.navigation ul li ul.dropdown li a:hover {
+  background-color: #555;
+}
+
+.navigation ul li ul.dropdown ul.dropdown {
+  left: 100%;
+  top: 0;
+  display: none;
+  background-color: #444;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.navigation ul li ul.dropdown li:hover > ul.dropdown {
+  display: block;
+}
+
+/* Carousel Styles */
+.carousel {
+  margin: 50px auto;
+  padding: 0 70px;
+}
+
+.carousel .item {
+  min-height: 325px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.carousel .thumb-wrapper {
+  padding: 25px 15px;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.carousel .thumb-wrapper:hover {
+  border-color: #7ac400;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.carousel .thumb-wrapper .img-box {
+  height: 200px; /* Set a fixed height */
+  width: 100%; /* Make it full width of its container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.carousel .thumb-wrapper .img-box img {
+  height: 100%; /* Make the image fill the height of the img-box */
+  width: auto; /* Adjust width proportionally to height */
+  object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
+}
+
+.carousel .item h4 {
+  font-size: 18px;
+}
+
+.carousel .thumb-content .btn {
+  color: rgb(12, 46, 47);
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: none;
+  border: 1px solid rgb(12, 46, 47);
+  padding: 6px 14px;
+  margin-top: 5px;
+  line-height: 16px;
+  border-radius: 20px;
+}
+
+.carousel .thumb-content .btn:hover, .carousel .thumb-content .btn:focus {
+  color: #fff;
+  background: rgb(12, 46, 47);
+  box-shadow: none;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  height: 44px;
+  width: 40px;
+  margin: auto 0;
+  border-radius: 4px;
+  opacity: 0.8;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  color: rgb(12, 46, 47);
+  opacity: 1;
+}
+
+.carousel-control-prev i, .carousel-control-next i {
+  font-size: 36px;
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  margin: -19px 0 0 0;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  color: rgb(12, 46, 47);
+  text-shadow: none;
+  font-weight: bold;
+}
+
+.carousel-indicators {
+  bottom: -50px;
+}
+
+.carousel-indicators li, .carousel-indicators li.active {
+  width: 10px;
+  height: 10px;
+  margin: 4px;
+  border-radius: 50%;
+  border: none;
+}
+
+.carousel-indicators li {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-indicators li.active {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Keyframes for Animation */
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pauseAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+  animation: bounceIn 2s ease-out infinite, pauseAnimation 3s;
+  animation-delay: 0s, 2s;
+  animation-duration: 2s, 3s;
+  animation-timing-function: ease-out, ease-out;
+  animation-fill-mode: forwards;
+  padding: 10px;
+}

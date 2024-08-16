@@ -1,0 +1,38 @@
+.text-primary{
+    text-decoration: none;
+}
+
+/* Base styles for the button */
+.button-30 {
+    display: inline-block;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff; /* White text color */
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px 24px; /* Padding for size */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Hover state */
+.button-30:hover {
+    background-color: #0056b3; /* Darker shade of the button color */
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+/* Focus state */
+.button-30:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Blue shadow for focus */
+}
+
+/* Active state */
+.button-30:active {
+    background-color: #004085; /* Even darker shade for when the button is clicked */
+    transform: scale(0.98); /* Slightly shrink the button when clicked */
+}

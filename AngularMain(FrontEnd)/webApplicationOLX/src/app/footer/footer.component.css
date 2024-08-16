@@ -1,0 +1,55 @@
+/* Main Footer Styles */
+footer {
+  
+  background-color: rgb(7, 46, 51);
+  color: white; /* This ensures that all text inside the footer, including h5 and li, is white */
+}
+
+footer h5 {
+  margin-top: 25px;
+  color: white; /* Specific styling for h5 tags */
+}
+
+footer ul li {
+  color: white; /* Specific styling for li tags */
+}
+
+footer a {
+  color: white; /* Ensures that links inside the footer are white */
+  text-decoration: none; /* Removes underline from links */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Optional: Adds underline on hover for better accessibility */
+}
+
+/* Social Media Styles */
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.social-media li {
+  margin: 0.5rem;
+}
+
+.social-icon {
+  color: white;
+  display: inline-block;
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+}
+
+.social-icon i {
+  font-size: 1.5rem; /* Adjust icon size as needed */
+}
+
+.social-icon:hover {
+  opacity: 0.8; /* Adjust hover effect if needed */
+}
+
+/* Text Centering */
+.text-center {
+  margin-top: 15px;
+}

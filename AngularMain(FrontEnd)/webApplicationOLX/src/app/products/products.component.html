@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+<br>
+<!-- <div style="border: 1px solid black; width:200px;; height: 200px; background-color: aqua;"></div> -->
+<div class="container">
+    <div class="product-grid">
+        <div class="product-card" *ngFor="let product of products">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="{{product.img1}}" alt="Product Image" height="300px" width="200">
+                    <h3>{{product.productName}}</h3>
+                    <p>{{product.productPrice | currency:"INR"}}</p>
+                    <!-- Button is outside of the card-inner to stay static -->
+                </div><br>
+                <div class="card-back">
+                    <p>{{product.productdesc}}</p>
+                </div>
+            </div>
+            <!-- Button outside of card-inner but inside card -->
+            
+            <button class="interested-button" (click)="payNow(product)">Buy</button>
+            <!-- <p>
+                <ng-container *ngIf="product.productStatus; else soldOut">
+                  <button class="interested-button" (click)="payNow(product)">Buy</button>
+                </ng-container>
+                <ng-template #soldOut>
+                  <span class="text-muted">Sold out</span>
+                </ng-template>
+              </p> -->
+        </div>
+    </div>
+</div>
+<br>

@@ -1,0 +1,234 @@
+/* General Styles */
+.navbar {
+  background-color: rgb(7, 46, 51);
+  justify-content: space-around;
+}
+
+.navbar-brand {
+  color: white;
+  font-weight: bold; /* Increase font weight */
+  font-family: 'Arial', sans-serif; /* Set font family */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+}
+
+.navbar-dark .nav-item .nav-link {
+  color: #fff;
+}
+
+.navbar-dark .nav-item .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  border-radius: 0.25rem;
+  color: #fff;
+}
+
+.fa-li {
+  position: relative;
+  left: 0;
+}
+
+img {
+  margin-top: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+.btn {
+  margin-top: 8px;
+}
+
+/* Button Styles */
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 35px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s, transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+/* Navbar Item Spacing */
+.navbar-nav .nav-item {
+  margin: 0 15px; /* Set uniform margin for all nav items */
+}
+
+.navbar-nav .nav-link {
+  padding: 0; /* Remove any default padding */
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .navbar .container {
+    padding: 0 15px;
+  }
+
+  .navbar-toggler {
+    border-color: transparent;
+  }
+
+  .navbar-toggler .fa-bars {
+    color: white;
+  }
+
+  .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .form-search {
+    margin: 10px 0;
+  }
+
+  .form-search .input-group {
+    width: 100%;
+  }
+
+  .form-search .form-control {
+    flex: 1;
+  }
+
+  .form-search .btn {
+    margin-right: 0;
+  }
+
+  .navbar-nav .nav-item img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .button-30 {
+    font-size: 16px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .navbar-brand {
+    font-size: 18px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .form-search {
+    flex-direction: column;
+  }
+
+  .form-search .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar-nav .nav-item img {
+    height: 35px;
+  }
+
+  .button-30 {
+    font-size: 14px;
+    height: 36px;
+  }
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #54B4D3;
+}
+
+.profile-header img {
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.profile-info h5 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.profile-info p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #151414;
+}
+
+.profile-actions button {
+  margin-top: 10px;
+  font-size: 0.875rem;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.nav-menu li {
+  margin-bottom: 10px;
+}
+
+.nav-menu li a {
+  color: #0a0a0a;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.nav-menu li a i {
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+.nav-menu li a:hover {
+  color: #021ffc;
+  text-decoration-line: underline;
+}
+
+.profile-card {
+  width: 300px;
+  height: auto;
+  padding: 10px;
+}
+
+.nav-item .logout{
+  margin-bottom: 5px;
+
+}

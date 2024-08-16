@@ -1,0 +1,72 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="title">
+    <h2>Edit Product</h2>
+  </div>
+  <div class="d-flex">
+    <form [formGroup]="myform" (ngSubmit)="handlesubmit()">
+      
+      <label>
+        <span>Product Type <span class="required">*</span></span>
+        <select formControlName="productType">
+          <option value="">Select product type...</option>
+          <option value="Vehicles">Vehicles</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Furnitures">Furnitures</option>
+          <option value="RealEstate">Real Estate</option>        
+        </select>
+      </label>
+    
+      <div class="form-group">
+        <label>
+          <span>Product Title <span class="required">*</span></span>
+          <input type="text" formControlName="productTitle" class="form-control" >
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label>
+          <span>Product Name <span class="required">*</span></span>
+          <input type="text" formControlName="productName" class="form-control" >
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label>
+          <span>Description</span>
+          <textarea formControlName="productdesc" class="form-control" ></textarea>
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label>
+          <span>Price <span class="required">*</span></span>
+          <input type="text" formControlName="productPrice" class="form-control" >
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label>
+          <span>Image1 <span class="required">*</span></span>
+          <input type="text" formControlName="img1" class="form-control" > 
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label>
+          <span>Image2 <span class="required">*</span></span>
+          <input type="text" formControlName="img2" class="form-control" > 
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label>
+          <span>Image3 <span class="required">*</span></span>
+          <input type="text" formControlName="img3" class="form-control" > 
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-outline-danger">Update Product</button>
+    </form>
+  </div>
+</div>
